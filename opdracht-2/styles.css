@@ -1,0 +1,103 @@
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 10 1 auto;
+}
+
+/*-------------------------------ASIDE------------------------------*/
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    min-width: 250px;
+    flex: 1 10 auto;
+    background-color: #f3f3f3;
+}
+
+.company {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    gap: 10px;
+    padding: 20px;
+}
+
+aside ul.navigation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-grow: 25;
+    gap: 5px;
+    list-style-type: none;
+    padding: 0 30px;
+}
+
+aside ul.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+    flex: 1 1 auto;
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+.button-primary,.button-secondary {
+    width: 100%;
+}
+
+.navigation li {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-image {
+    height: 20px;
+}
+
+.logo-text {
+    font-weight: bold;
+}
+
+.thumb {
+    height: 15px;
+}
+
+/*-------------------------------HEADER------------------------------*/
+
+header {
+    background-image: url("../assets/placeholder-image.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0;
+}
+
+/*-------------------------------MAIN CONTENT------------------------*/
+
+
+
+/*-------------------------------FOOTER------------------------------*/
+footer {
+    background-color: #383838;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 0;
+}
