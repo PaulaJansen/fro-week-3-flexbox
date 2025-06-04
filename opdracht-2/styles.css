@@ -1,14 +1,16 @@
-
+/*-----------------------------GLOBAL--------------------------------*/
 body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    height: 100vh;
 }
 
 .main-content {
     display: flex;
     flex-direction: column;
-    flex: 10 1 auto;
+    flex: 1 5 auto;
+    overflow-y: scroll;
 }
 
 /*-------------------------------ASIDE------------------------------*/
@@ -16,17 +18,16 @@ body {
 aside {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 100vh;
+    justify-content: flex-end;
     min-width: 250px;
-    flex: 1 10 auto;
+    flex: 10 1 30%;
     background-color: #f3f3f3;
-}
+    }
 
 .company {
     display: flex;
     flex-direction: row;
-    flex-grow: 1;
+    flex-grow: 0;
     gap: 10px;
     padding: 20px;
 }
@@ -35,10 +36,23 @@ aside ul.navigation {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex-grow: 25;
+    flex-grow: 5;
     gap: 5px;
     list-style-type: none;
     padding: 0 30px;
+}
+
+.navigation li {
+    width: 100%;
+}
+
+aside a {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    gap: 10px;
+    flex: 1 1 auto;
 }
 
 aside ul.buttons {
@@ -56,13 +70,6 @@ aside ul.buttons {
     width: 100%;
 }
 
-.navigation li {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .logo-image {
     height: 20px;
 }
@@ -71,9 +78,6 @@ aside ul.buttons {
     font-weight: bold;
 }
 
-.thumb {
-    height: 15px;
-}
 
 /*-------------------------------HEADER------------------------------*/
 
@@ -92,7 +96,39 @@ header {
 
 /*-------------------------------MAIN CONTENT------------------------*/
 
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 40px 80px;
+    gap: 30px;
+    flex: 1 1 auto;
+}
 
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+    flex: 1 1 21%;
+}
+
+.course-image {
+    width: 100%;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thumb {
+    width: 15px;
+}
 
 /*-------------------------------FOOTER------------------------------*/
 footer {
