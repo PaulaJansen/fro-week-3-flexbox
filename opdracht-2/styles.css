@@ -1,4 +1,20 @@
-/*-----------------------------GLOBAL--------------------------------*/
+/*/////////////////////
+1. GLOBAL
+2. ASIDE
+3.HEADER
+4. MAIN CONTENT
+5. FOOTER
+//////////////////////*/
+
+
+
+/*-----------------------------1. GLOBAL--------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
     flex-direction: row;
@@ -6,19 +22,13 @@ body {
     height: 100vh;
 }
 
-.main-content {
-    display: flex;
-    flex-direction: column;
-    flex: 1 5 auto;
-    overflow-y: scroll;
-}
-
-/*-------------------------------ASIDE------------------------------*/
+/*-------------------------------2. ASIDE------------------------------*/
 
 aside {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    align-items: stretch;
     min-width: 250px;
     flex: 10 1 30%;
     background-color: #f3f3f3;
@@ -27,6 +37,8 @@ aside {
 .company {
     display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
     flex-grow: 0;
     gap: 10px;
     padding: 20px;
@@ -35,8 +47,9 @@ aside {
 aside ul.navigation {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: flex-start;
-    flex-grow: 5;
+    flex-grow: 10;
     gap: 5px;
     list-style-type: none;
     padding: 0 30px;
@@ -52,7 +65,7 @@ aside a {
     justify-content: stretch;
     align-items: center;
     gap: 10px;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
 }
 
 aside ul.buttons {
@@ -78,8 +91,7 @@ aside ul.buttons {
     font-weight: bold;
 }
 
-
-/*-------------------------------HEADER------------------------------*/
+/*-------------------------------3. HEADER------------------------------*/
 
 header {
     background-image: url("../assets/placeholder-image.svg");
@@ -94,7 +106,14 @@ header {
     padding: 150px 0;
 }
 
-/*-------------------------------MAIN CONTENT------------------------*/
+/*-------------------------------4. MAIN CONTENT------------------------*/
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 5 auto;
+    overflow-y: scroll;
+}
 
 .cards {
     display: flex;
@@ -130,7 +149,7 @@ article {
     width: 15px;
 }
 
-/*-------------------------------FOOTER------------------------------*/
+/*-------------------------------5. FOOTER------------------------------*/
 footer {
     background-color: #383838;
     text-align: center;
