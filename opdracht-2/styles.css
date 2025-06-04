@@ -1,0 +1,158 @@
+/*/////////////////////
+1. GLOBAL
+2. ASIDE
+3.HEADER
+4. MAIN CONTENT
+5. FOOTER
+//////////////////////*/
+
+
+
+/*-----------------------------1. GLOBAL--------------------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+/*-------------------------------2. ASIDE------------------------------*/
+
+aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    min-width: 250px;
+    flex: 10 1 30%;
+    background-color: #f3f3f3;
+    }
+
+.company {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 0;
+    gap: 10px;
+    padding: 20px;
+}
+
+aside ul.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-grow: 10;
+    gap: 5px;
+    list-style-type: none;
+    padding: 0 30px;
+}
+
+.navigation li {
+    width: 100%;
+}
+
+aside a {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+    align-items: center;
+    gap: 10px;
+    flex: 1 0 auto;
+}
+
+aside ul.buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+    gap: 10px;
+    flex: 1 1 auto;
+    list-style-type: none;
+    padding: 0 20px;
+}
+
+.button-primary,.button-secondary {
+    width: 100%;
+}
+
+.logo-image {
+    height: 20px;
+}
+
+.logo-text {
+    font-weight: bold;
+}
+
+/*-------------------------------3. HEADER------------------------------*/
+
+header {
+    background-image: url("../assets/placeholder-image.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0;
+}
+
+/*-------------------------------4. MAIN CONTENT------------------------*/
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    flex: 1 5 auto;
+    overflow-y: scroll;
+}
+
+.cards {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 40px 80px;
+    gap: 30px;
+    flex: 1 1 auto;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
+    flex: 1 1 21%;
+}
+
+.course-image {
+    width: 100%;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thumb {
+    width: 15px;
+}
+
+/*-------------------------------5. FOOTER------------------------------*/
+footer {
+    background-color: #383838;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 10px 0;
+}
